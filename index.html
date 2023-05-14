@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <title>Arithmetica | Documentation</title>
+</head>
+
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const functionList = document.querySelector('ul');
+            console.log(functionList);
+            functionList.addEventListener('click', (event) => {
+                window.location.href = `functions/${event.target.innerText}.html`;
+            });
+        });
+    </script>
+
+
+
+    <div class="intro">
+        <h1 class="h1_title" align="center">Arithmetica: Documentation</h1>
+
+        <h2 class="h2_subtitle">Introduction</h2>
+        <p class="introduction-paragraph">
+            <b>Arithmetica</b> is a general-purpose infinite precision Linux and windows math library with a wide
+            variety of
+            mathematical functions and features. Currently supported languages are C, C++, and Python.
+        </p>
+
+        <hr>
+    </div>
+
+    <div class="main-contents">
+        <h2 class="h2_subtitle">Functions</h2>
+        <p class="introduction-paragraph">
+            Arithmetica has a wide variety of mathematical functions and features. The following is a list of all the
+            functions and features currently supported by arithmetica. Click on any of the functions to learn more.
+
+        <ul>
+            <li><code><u>arccos</u></code></li>
+            <li><code><u>arcsin</u></u></code></li>
+            <li><code><u>arctan</u></code></li>
+            <li><code><u>continued_fraction_to_fraction</u></code></li>
+            <li><code><u>cosine</u></code></li>
+            <li><code><u>exponential</u></code></li>
+            <li><code><u>factorial</u></code></li>
+            <li><code><u>find_roots_of_polynomial</u></code></li>
+            <li><code><u>fraction_to_continued_fraction</u></code></li>
+            <li><code><u>igcd</u></code></li>
+            <li><code><u>ilcm</u></code></li>
+            <li><code><u>natural_logarithm</u></code></li>
+            <li><code><u>power_integer</u></code></li>
+            <li><code><u>power</u></code></li>
+            <li><code><u>repeating_decimal_to_fraction</u></code></li>
+            <li><code><u>simplify_arithmetic_expression</u></code></li>
+            <li><code><u>sine</u></code></li>
+            <li><code><u>square_root</u></code></li>
+            <li><code><u>tangent</u></code></li>
+            <li><code><u>terminating_decimal_to_fraction</u></code></li>
+            <!-- <li><code></code></li> -->
+        </ul>
+        </p>
+    </div>
+</body>
+
+</html>

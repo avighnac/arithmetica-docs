@@ -1,0 +1,31 @@
+p, .p_like_style {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.h1_title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+}
+
+.h2_subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+}
+
+/* .table_style {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+.table_style, td, tr, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+} */
+ul {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+.intro {}
+
+.main-contents {}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <title>Arithmetica | arccos</title>
+</head>
+
+<body>
+
+    <h1 class="h1_title" align="center"><a href="../index.html">Arithmetica: Documentation</a></h1>
+
+    <div class="function-main">
+        <p>
+            <u><b>Function Stubs</b></u>:
+        <div class="p_like_style">
+            <b>C</b><br>
+            <code class="prettyprint" style="margin-left: 30px">
+                char *arccos (const char *number, size_t accuracy);
+            </code>
+
+            <br><br>
+
+            <b>C++</b><br>
+            <code class="prettyprint" style="margin-left: 30px">
+                std::string arccos (std::string n, size_t accuracy);
+            </code>
+        </div>
+        </p>
+
+        <p><u><b>Description</b></u>: <br> Computes the inverse cosine of a number less than 1.</p>
+
+        <p>
+            <u><b>Parameters</b></u>: <br>
+            <code>const char * number</code>: The number to compute the inverse cosine of. <br>
+            <code>size_t accuracy</code>: The number of decimal places to calculate accurately to. <br>
+        </p>
+
+        <p>
+            <u><b>Return Value</b></u>: The inverse cosine of the first argument.<br>
+        </p>
+
+        <p>
+            <u><b>Example Usage</b></u>: <br>
+        <div class="p_like_style">
+            <b>C</b>
+            <pre class="prettyprint">#include &lt;arithmetica.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main() {
+  char *x = arccos("0.5", 10);
+  printf("arccos(0.5) = %s\n", x);
+
+  free(x);
+  return 0;
+}</pre>
+
+        <b>Output:</b> <br>
+        <code>arccos(0.5) = 1.0471975512</code>
+
+            <br><br>
+
+            <b>C++</b>
+                        <pre class="prettyprint">#include &lt;arithmetica.hpp&gt;
+#include &lt;iostream&gt;
+
+int main() {
+  std::cout << "arccos(0.5) = " << arithmetica::arccos("0.5", 10) << "\n";
+
+  return 0;
+}</pre>
+
+        <b>Output:</b> <br>
+        <code>arccos(0.5) = 1.0471975512</code>
+
+        </div>
+        </p>
+    </div>
+
+</body>
+
+</html>
